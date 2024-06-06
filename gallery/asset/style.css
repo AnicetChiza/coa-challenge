@@ -21,11 +21,36 @@ h6 {
 }
 
 
-/* OUR BODY */
+/* Body */
 
 body {
     width: 100%;
     height: 100%;
     font-size: 1rem;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Albert Sans", sans-serif;
+}
+
+
+/* Welcome section */
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section .home-page {
+    width: 60%;
+    padding: 30px;
+}
+
+section .home-page h1 {
+    font-size: 2rem;
+}
+
+section .home-page p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
