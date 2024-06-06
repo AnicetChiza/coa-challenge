@@ -69,7 +69,7 @@ section {
     justify-content: center;
     text-align: center;
     position: relative;
-    background: linear-gradient(to right, #687d79e3 0%, #194569f4 100%), url('./images/home-bg.jpg') no-repeat;
+    background: linear-gradient(to right, #687d79e3 0%, #194569f4 100%), url('../images/home-bg.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -148,5 +148,23 @@ section .home-page p {
     }
     100% {
         transform: translate(85px, 0%);
+    }
+}
+
+
+/* Responsivity */
+
+@media screen and (max-width: 850px) {
+    section .home-page p {
+        width: 100%;
+    }
+    .home-container {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    section .home-page h1 {
+        font-size: 2rem;
     }
 }
