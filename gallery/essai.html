@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader Example</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        /* Preloader styles */
+        
+        #preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(25, 69, 105, 0.3);
+            border-radius: 50%;
+            border-top-color: #194569;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Content -->
+    <section>
+        <div class="home-page">
+            <h1>Welcome to our Gallery</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam id cum, tempore iste fugit distinctio facilis non quisquam? Quidem similique ratione sunt esse dolorum iusto officiis in quisquam vitae porro aperiam dicta, voluptatibus
+                ipsam vero.</p>
+            <a href="#">View gallery</a>
+        </div>
+    </section>
+    <script>
+        // Hide preloader after 4 seconds
+        setTimeout(function() {
+            var preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        }, 2000);
+    </script>
+</body>
+
+</html>
