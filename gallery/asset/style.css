@@ -46,12 +46,9 @@ body {
     justify-content: center;
 }
 
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid rgba(25, 69, 105, 0.3);
-    border-radius: 50%;
-    border-top-color: #194569;
+.spinner i {
+    font-size: 2rem;
+    color: #194569f4;
     animation: spin 1s ease-in-out infinite;
 }
 
