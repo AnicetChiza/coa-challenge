@@ -1,3 +1,31 @@
 .gallery-page {
     padding: 30px 30px;
 }
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item .gallery-text {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 30px;
+    color: #fff;
+    width: 100%;
+}
+
+.gallery-item .gallery-text h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.gallery-item .gallery-text span,
+strong {
+    display: none;
+}
