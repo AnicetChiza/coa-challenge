@@ -4,6 +4,8 @@
 
 .gallery-container {
     display: grid;
+    gap: 15px;
+    -webkit-column-gap: 15px;
     grid-template-columns: auto auto auto auto;
 }
 
@@ -78,4 +80,34 @@
 
 .gallery-page .btn button:hover {
     background-color: #000000c7;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1050px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .gallery-item .gallery-text {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .gallery-page {
+        padding: 15px 15px;
+    }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }

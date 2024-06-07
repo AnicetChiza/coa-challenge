@@ -69,7 +69,9 @@ section {
     justify-content: center;
     text-align: center;
     position: relative;
-    background: linear-gradient(to right, #687d79e3 0%, #194569f4 100%), url('../images/home-bg.jpg') no-repeat;
+    background: linear-gradient(to right, #323232e0/*#687d79e3*/
+    0%, #000000da/*#194569f4*/
+    100%), url('../images/home-bg.jpg') no-repeat;
     background-size: cover;
 }
 
