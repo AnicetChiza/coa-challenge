@@ -47,7 +47,7 @@ body {
 }
 
 .spinner i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #194569f4;
     animation: spin 2s ease-in-out infinite;
 }
