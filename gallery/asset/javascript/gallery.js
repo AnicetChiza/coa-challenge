@@ -23,15 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const showImages = document.querySelectorAll('.show-image');
-    const viewImages = document.querySelectorAll('.view-img');
+    const viewImages = document.querySelectorAll('.vieuw-img');
 
     viewImages.forEach(viewImage => {
         viewImage.addEventListener('click', function() {
-            const imageSrc = this.src; // Get the source of the clicked image
+            const imageSrc = this.src;
             showImages.forEach(showImage => {
                 const imgElement = showImage.querySelector('img');
-                imgElement.src = imageSrc; // Set the source of the image in show-image
-                showImage.style.display = 'flex'; // Display the show-image element
+                imgElement.src = imageSrc;
+                showImage.style.display = 'flex';
             });
         });
     });
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showImages.forEach(showImage => {
         const exitIcon = showImage.querySelector('.exit-icon');
         exitIcon.addEventListener('click', function() {
-            showImage.style.display = 'none'; // Hide the show-image element
+            showImage.style.display = 'none';
         });
     });
 });
