@@ -12,27 +12,27 @@
     <h4>See the output by using the console</h4>
 
     <script>
-        function stringTransformation(str) {
-            let length = str.length;
+        function stringTransform(str) {
+            let totalLength = str.length;
 
-            if (length % 15 === 0) {
+            if (totalLength % 15 === 0) {
                 let reverseString = str.split('').reverse().join('');
-                let asciiCodes = reverseString.split('').map(char => char.charCodeAt(0)).join(' ');
-                return asciiCodes;
-            } else if (length % 3 === 0) {
+                let asciiCode = reverseString.split('').map(char => char.charCodeAt(0)).join(' ');
+                return asciiCode;
+            } else if (totalLength % 3 === 0) {
                 let reverseString = str.split('').reverse().join('');
                 return reverseString;
-            } else if (length % 5 === 0) {
-                let asciiCodes = str.split('').map(char => char.charCodeAt(0)).join(' ');
-                return asciiCodes;
+            } else if (totalLength % 5 === 0) {
+                let asciiCode = str.split('').map(char => char.charCodeAt(0)).join(' ');
+                return asciiCode;
             } else {
                 return str;
             }
         }
 
-        console.log(stringTransformation("Hamburger"));
-        console.log(stringTransformation("Pizza"));
-        console.log(stringTransformation("Chocolate chip cookie"));
+        console.log(stringTransform("Hamburger"));
+        console.log(stringTransform("Pizza"));
+        console.log(stringTransform("Chocolate chip cookie"));
     </script>
 </body>
 
