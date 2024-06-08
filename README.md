@@ -22,7 +22,7 @@ Folder Structure:
 index.html: The main page of the gallery.
 gallery.html & gallerytwo.html: Additional HTML pages for displaying different parts of the gallery.
 assets/: A folder containing additional resources for the gallery:
-css/: Contains stylesheets for the gallery's layout and appearance.
+css/: Contains stylesheets for the gallery's layout and appearance, it has two files, style.css for the index page and gallery.css for the gallery pages.
 images/: Stores the images displayed in the gallery.
 javascript/: Includes JavaScript code for interactivity and effects.
 
