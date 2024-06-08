@@ -17,7 +17,7 @@ h4,
 h4,
 h5,
 h6 {
-    font-family: 'D-DIN', sans-serif;
+    font-family: "Albert Sans", sans-serif;
 }
 
 
@@ -27,7 +27,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1rem;
-    font-family: "Albert Sans", sans-serif;
+    font-family: "Sulphur Point", sans-serif;
 }
 
 
@@ -43,12 +43,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000ed;
+    background-color: #fff;
 }
 
 .spinner i {
     font-size: 2.5rem;
-    color: #fff;
+    color: #000;
     animation: spin 2s ease-in-out infinite;
 }
 
