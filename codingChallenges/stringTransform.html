@@ -14,9 +14,22 @@
 
             if (length % 15 === 0) {
                 let reverseString = str.split('').reverse().join('');
-                let asciiCodes = reversedStr.split('').map(char => char.charCodeAt(0)).join(' ');
+                let asciiCodes = reverseString.split('').map(char => char.charCodeAt(0)).join(' ');
+                return asciiCodes;
+            } else if (length % 3 === 0) {
+                let reverseString = str.split('').reverse().join('');
+                return reverseString;
+            } else if (length % 5 === 0) {
+                let asciiCodes = str.split('').map(char => char.charCodeAt(0)).join(' ');
+                return asciiCodes;
+            } else {
+                return str;
             }
         }
+
+        console.log(stringTransformation("Hamburger"));
+        console.log(stringTransformation("Pizza"));
+        console.log(stringTransformation("Chocolate chip cookie"));
     </script>
 </body>
 
