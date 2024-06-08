@@ -22,25 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
 // Vieuw images
 
 document.addEventListener('DOMContentLoaded', () => {
-    const showImages = document.querySelectorAll('.show-image');
-    const viewImages = document.querySelectorAll('.vieuw-img');
+    const bigImage = document.querySelectorAll('.show-image');
+    const allImages = document.querySelectorAll('.vieuw-img');
 
-    viewImages.forEach(viewImage => {
-        viewImage.addEventListener('click', function() {
+    allImages.forEach(allImages => {
+        allImages.addEventListener('click', function() {
             const imageSrc = this.src;
-            showImages.forEach(showImage => {
-                const imgElement = showImage.querySelector('img');
+            bigImage.forEach(bigImage => {
+                const imgElement = bigImage.querySelector('img');
                 imgElement.src = imageSrc;
-                showImage.style.display = 'flex';
+                bigImage.style.display = 'flex';
             });
         });
     });
 
     // Add event listener to close the show-image when the exit icon is clicked
-    showImages.forEach(showImage => {
-        const exitIcon = showImage.querySelector('.exit-icon');
+    bigImage.forEach(bigImage => {
+        const exitIcon = bigImage.querySelector('.exit-icon');
         exitIcon.addEventListener('click', function() {
-            showImage.style.display = 'none';
+            bigImage.style.display = 'none';
         });
     });
 });
